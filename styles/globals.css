@@ -1,0 +1,71 @@
+/* Employee Dahboard Global StylesSheet 
+
+Project : Employee Dashboard 
+Team : Project B 
+Company: MckinleyRice 
+
+*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  background-color: #f1f5fb;
+}
+.active {
+  background-color: red;
+}
+
+/* custom dropdown design stylessheet */
+/* // custom dropdownd desiogn */
+.custom-dropdown {
+  padding: 15px 0px;
+  position: relative;
+  width: 225px;
+}
+.custom-dropdown-selection {
+  border: 1px solid #2c3058;
+
+  padding: 10px 16px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(175, 175, 175, 0.25);
+  background: #ffffff;
+  position: relative;
+  color: #222222;
+}
+.custom-dropdown-selection::after {
+  display: block;
+  content: "";
+  height: 8px;
+  width: 8px;
+  border-right: 1px solid #2c3058;
+  border-bottom: 1px solid #2c3058;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 8%;
+  top: 35%;
+}
+.custom-dropdown-selection.visible::after {
+  top: 45%;
+  transform: rotate(-135deg);
+}
+.custom-dropdown .item-holder {
+  background-color: #ffffff;
+  position: absolute;
+  top: 100%;
+  width: 225px;
+  z-index: 9;
+  box-shadow: 2px 2px 8px rgb(175 175 175 / 25%);
+}
+.custom-dropdown .item-holder .dropdown-item {
+  padding: 10px 16px;
+  cursor: pointer;
+  color: #222222;
+}
+.custom-dropdown .item-holder .dropdown-item:hover {
+  background: rgba(138, 142, 186, 0.29);
+}
